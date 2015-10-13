@@ -16,5 +16,4 @@ class HolaMon extends Model
         return $this->string;
     }
 
-
 }

@@ -11,10 +11,10 @@
 |
 */
 
+use App\HolaMon;
+
 Route::get('/', function () {
     return view('welcome');
 });
 
-Route::get('/helloworld', function () {
-    return view ("holamon");
-});
+Route::get('/helloworld', "HolaMon@hello");

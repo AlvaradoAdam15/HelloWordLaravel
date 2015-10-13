@@ -6,7 +6,7 @@ use Illuminate\Http\Request;
 use App\Http\Requests;
 use App\Http\Controllers\Controller;
 
-class HolaMon extends Controller
+class HolaMonController extends Controller
 {
     public function hello()
     {

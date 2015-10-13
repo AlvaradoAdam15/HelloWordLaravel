@@ -16,5 +16,5 @@ Route::get('/', function () {
 });
 
 Route::get('/helloworld', function () {
-    echo "<h1>Hola Món!</h1>";
+    return view ("holamon");
 });

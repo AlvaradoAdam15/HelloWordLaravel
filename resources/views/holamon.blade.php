@@ -1,1 +1,11 @@
-<h1>Hola Mon </h1>
+<?php
+
+use App\HolaMon;
+
+$model = new HolaMon();
+
+$hola = $model->getString();
+?>
+
+<h1>{{ $hola }}</h1>
+

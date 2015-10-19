@@ -71,3 +71,5 @@ Route::get('/prova7', function () {
 Route::get('/prova8', function () {
     return redirect('http://google.com');
 });
+
+Route::resource('persons', 'PersonsController');

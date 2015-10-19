@@ -9,13 +9,28 @@ use App\Http\Controllers\Controller;
 class PersonsController extends Controller
 {
     /**
+     * @var Request
+     */
+    private $request;
+
+    /**
+     * PersonsController constructor.
+     */
+    public function __construct(Request $request)
+    {
+
+        $this->request = $request;
+    }
+
+
+    /**
      * Display a listing of the resource.
      *
      * @return \Illuminate\Http\Response
      */
     public function index()
     {
-        //
+
     }
 
     /**
@@ -25,7 +40,7 @@ class PersonsController extends Controller
      */
     public function create()
     {
-        //
+
     }
 
     /**
@@ -70,7 +85,7 @@ class PersonsController extends Controller
      */
     public function update(Request $request, $id)
     {
-        //
+        echo "update!";
     }
 
     /**
@@ -81,6 +96,6 @@ class PersonsController extends Controller
      */
     public function destroy($id)
     {
-        //
+        echo "Destroyed OK!";
     }
 }

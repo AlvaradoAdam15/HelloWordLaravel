@@ -40,3 +40,12 @@ Route::get('/prova3', function () {
     return response($content, $status)
         ->header('Content-Type', $contentType);
 });
+
+Route::get('/prova4', function () {
+    $content = '<h1>Hello world </h1>';
+    $status = 200;
+    $contentType = "text/plain";
+    return response($content, $status)
+        ->header('Content-Type', $contentType)
+        ->header('MyHeader', "HOLA");
+});

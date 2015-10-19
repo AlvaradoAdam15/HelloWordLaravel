@@ -67,3 +67,7 @@ Route::get('/prova7', function () {
         'name' => 'Abigali', 'state' => 'CA'
     ];
 });
+
+Route::get('/prova8', function () {
+    return redirect('http://google.com');
+});

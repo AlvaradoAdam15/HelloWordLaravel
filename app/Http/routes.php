@@ -49,3 +49,9 @@ Route::get('/prova4', function () {
         ->header('Content-Type', $contentType)
         ->header('MyHeader', "HOLA");
 });
+
+Route::get('/prova5', function () {
+    $pathToFile = public_path('prova.pdf');
+    
+    return response()->download($pathToFile);
+});

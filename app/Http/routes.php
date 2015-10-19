@@ -32,3 +32,11 @@ Route::get('/prova2', function () {
     return response($content, $status)
         ->header('Content-Type', $contentType);
 });
+
+Route::get('/prova3', function () {
+    $content = '<h1>Hello world </h1>';
+    $status = 200;
+    $contentType = "application/pdf";
+    return response($content, $status)
+        ->header('Content-Type', $contentType);
+});

@@ -52,6 +52,18 @@ Route::get('/prova4', function () {
 
 Route::get('/prova5', function () {
     $pathToFile = public_path('prova.pdf');
-    
+
     return response()->download($pathToFile);
+});
+
+Route::get('/prova6', function () {
+    return response()->json([
+        'name' => 'Abigali', 'state' => 'CA'
+    ]);
+});
+
+Route::get('/prova7', function () {
+    return [
+        'name' => 'Abigali', 'state' => 'CA'
+    ];
 });

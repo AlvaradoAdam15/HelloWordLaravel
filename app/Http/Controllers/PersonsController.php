@@ -96,6 +96,6 @@ class PersonsController extends Controller
      */
     public function destroy($id)
     {
-        echo "Destroyed OK!";
+        echo "$id destroyed ok!";
     }
 }
